@@ -35,7 +35,7 @@ int bipartite(vector<vector<int> > &adj) {
     for(int i=0; i < adj[u].size(); ++i) {
       int v = adj[u][i];
       // Destination v is colored with same color as u
-      if (colorArr[v] == color[u])
+      if (color[v] == color[u])
         return 0;
         
 	  // Destination v is not colored
